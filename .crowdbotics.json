@@ -1,0 +1,14 @@
+{
+  "scaffold": {
+    "type": "react-native",
+    "version": "2.0.0",
+    "cookiecutter_context": {
+      "project_name": "ent-demo-star-wars-v1",
+      "project_slug": "ent_demo_star_wars__41688",
+      "project_dash_slug": "ent-demo-star-wars--41688",
+      "project_description": "This react_native application was built with Crowdbotics www.crowdbotics.com",
+      "owner_email": "jason.kozel@crowdbotics.com",
+      "ssh_key_fingerprint": "c5:bd:6d:0b:a1:39:97:83:ca:b5:13:59:14:ff:49:40"
+    }
+  }
+}
