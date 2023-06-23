@@ -1,22 +1,29 @@
-import React from "react"
-import { View, Image, Text, ScrollView, SafeAreaView } from "react-native"
-import { styles } from "./styles"
+import React, { useEffect } from "react";
+import { View, Image, StyleSheet } from "react-native";
 
-const WelcomeScreen = () => {
-  return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView contentContainerStyle={styles.scrollView}>
-        <View style={styles.group} />
-        <View style={styles.group}>
-          <Image style={styles.logo} source={require("./logo.png")} />
-          <Text style={styles.text}>
-            Let's build something amazing together!
-          </Text>
-        </View>
-        <Text style={styles.footer}>Made with ❤️ by Crowdbotics</Text>
-      </ScrollView>
-    </SafeAreaView>
-  )
-}
+const Splash = ({
+  navigation
+}) => {
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.replace("Home");
+    }, 3000);
+  }, [navigation]);
+  return <View style={styles.container}>
+      <Image style={styles.logo} source={require("./assets/star-wars-logo.png")} />
+    </View>;
+};
 
-export default WelcomeScreen
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#000"
+  },
+  logo: {
+    width: 300,
+    height: 150
+  }
+});
+export default Splash;
